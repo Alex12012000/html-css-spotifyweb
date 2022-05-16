@@ -201,14 +201,34 @@ main {
     font-size: 14px;
 }
 
+/* Upgrade Bar */
+
+.upgrade-bar {
+    height: 70px;
+    width: calc( 100% - 250px);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.527);
+    position: fixed;
+    top: 0;
+    right: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upgrade-bar a {
+    color: white;
+    font-size: 14px;
+    padding: 0.5rem 2rem;
+    border: 1px solid white;
+    border-radius: 20px;
+}
 
 /* Main-Content */
 .main {
     width: calc( 100% - 250px);
+    padding-top: 100px;
     overflow-y: auto;
-
-    /* TEST */
-    background-color: blueviolet;
+    background-color: #141922;
 }
 
 
@@ -218,6 +238,7 @@ footer {
     height: 70px;
     overflow-x: hidden;
 }
+
 
 
 /* --------------------------
@@ -299,6 +320,11 @@ footer {
     .user-info {
         align-items: center;
         justify-content: center;
+    }
+
+    /* UPGRADE BAR */
+    .upgrade-bar {
+        width: calc( 100% - 40px);
     }
 
     /* MAIN */
