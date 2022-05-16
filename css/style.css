@@ -10,36 +10,299 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    color: white;
+    font-size: 15px;
+}
+
+.flex {
+    display: flex;
+}
 /* MAIN */
 
 main {
     width: 100%;
     height: calc( 100vh - 70px);
     display: flex;
-    
-    /* TEST */
-    background-color: blue;
 }
+
+/* Side Bar */
+.sidebar {
+    width: 250px;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex-direction: column;
+}
+
+.logo {
+    padding: 1rem;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo img {
+    width: 65%;
+}
+
+.minilogo {
+    display: none;
+}
+
+/* nav */
+
+.nav {
+    flex-grow: 1;
+}
+
+.nav li {
+    align-items: center;
+    padding: 5px 17px;
+}
+
+.nav li:first-child {
+    padding: 5px 14px;
+}
+
+.nav img {
+    width: 25px;
+}
+
+.nav a {
+    color: grey;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.home {
+    border-left: 3px solid #adff2f;
+}
+
+.home a {
+    color: white;
+}
+
+
+/* playlist */
+
+.playlist {
+    flex-grow: 10;
+    flex-direction: column;
+}
+
+.playlist h3 {
+    padding: 15px 17px;
+}
+
+.create-playlist {
+    align-items: center;
+}
+
+.addbox {
+    width: 40px;
+    height: 40px;
+    background-color: grey;
+    margin-left: 17px;
+    text-align: center;
+}
+
+.addbox i {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.create-playlist a {
+    color: grey;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+.play-ul {
+    overflow-y: auto;
+}
+
+.play-ul ul {
+    padding: 17px 17px;
+}
+
+.play-ul li {
+    padding: 5px 0;
+    font-size: 12px;
+}
+
+.play-ul a {
+    color: grey;
+}
+
+
+/* user */
+.user {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.download {
+    align-items: center;
+    margin: 0 14px;
+    padding: 10px 0;
+    width: 80%;
+    border-bottom: 1px solid grey;
+}
+
+.download img {
+    width: 15px;
+    height: 15px;
+    margin-right: 14px;
+    
+}
+
+.download a {
+    color: grey;
+    font-size: 12px;
+}
+
+.user-info {
+    margin: 0 14px;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.profile {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: gray;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile img {
+    object-fit: contain;  
+}
+
+.user-info a {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
 
 /* Main-Content */
 .main {
-    width: calc( 100% - 190px);
+    width: calc( 100% - 250px);
     overflow-y: auto;
 
     /* TEST */
     background-color: blueviolet;
 }
 
-/* Side Bar */
-.sidebar {
-    width: 190px;
-    background-color: brown;
-    overflow-y: hidden;
-}
 
 /* FOOTER */
 footer {
     background-color: darkgray;
     height: 70px;
     overflow-x: hidden;
+}
+
+
+/* --------------------------
+        RESPONSIVE
+----------------------------- */
+
+/* sx */
+
+@media screen and ( max-width: 600px ) {
+    
+    /* SIDEBAR */
+    
+    /* Logo */
+    .sidebar {
+        width: 40px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .minilogo {
+        display: block;
+        padding: 7px;
+        align-items: center;
+    }
+
+    /* Nav */
+
+    .home {
+        border: none;
+    }
+
+    .nav li, .nav li:first-child{
+        padding: 5px 0;
+        justify-content: center;
+    }
+    
+    .nav img {
+        width: 25px;
+    }
+
+    .nav a {
+        display: none;
+    }
+
+    /* Playlist */
+
+    .create-playlist, .play-ul, .playlist h3{
+        display: none;
+    }
+
+    /* User */
+    
+    .user {
+        align-items: center;
+    }
+
+    .download {
+        border: none;
+        align-content: center;
+    }
+    
+    .download a, .user-info a{
+        display: none;
+    }
+
+    .user-info, .download {
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .download img, .profile {
+        margin: 0;
+    }
+
+
+    .user-info {
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* MAIN */
+    .main {
+        width: calc(100% - 40px);
+    }
 }
