@@ -3,3 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+    height: calc( 100vh - 70px);
+    display: flex;
+    
+    /* TEST */
+    background-color: blue;
+}
+
+/* Main-Content */
+.main {
+    width: calc( 100% - 190px);
+    overflow-y: auto;
+
+    /* TEST */
+    background-color: blueviolet;
+}
+
+/* Side Bar */
+.sidebar {
+    width: 190px;
+    background-color: brown;
+    overflow-y: hidden;
+}
+
+/* FOOTER */
+footer {
+    background-color: darkgray;
+    height: 70px;
+    overflow-x: hidden;
+}
