@@ -374,6 +374,7 @@ main {
 }
 
 /* FOOTER */
+
 footer {
     background-color: #282828;
     height: 70px;
@@ -413,9 +414,18 @@ footer {
     font-size: 10px;
 }
 
+.name span:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .song-icons i{
     color: grey;
     margin: 0 5px;
+}
+
+.song-icons i:hover {
+    color: white;
 }
 
 .info {
@@ -441,8 +451,12 @@ footer {
     color: white;
 }
 
-.player-icons i:nth-last-child(3) {
+.player-icons a:nth-last-child(3) {
     font-size: 25px;
+}
+
+.player-icons a:nth-last-child(3):hover {
+    transform: scale(1.2);
 }
 
 .play-bar {
@@ -460,12 +474,32 @@ footer {
     height: 4px;
     background-color: grey;
     width: 60%;
+    position: relative;
 }
 
 .listen {
     height: 4px;
     width: 30%;
     background-color: white;
+}
+
+.bar:hover .listen {
+    background-color: #adff2f;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: calc( 100% - 7px);
+    left: 27%;
+    display: none;
+}
+
+.bar:hover .circle{
+    display: inline-block;
 }
 
 /* Audio Settings */
