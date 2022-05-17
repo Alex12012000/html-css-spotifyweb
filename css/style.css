@@ -87,6 +87,10 @@ main {
     padding-left: 10px;
 }
 
+.nav a:hover {
+    color: white;
+}
+
 .home {
     border-left: 3px solid #adff2f;
 }
@@ -110,6 +114,14 @@ main {
     align-items: center;
 }
 
+.create-playlist a:hover{
+    color: white;
+}
+
+.create-playlist .addbox:hover {
+    background-color: white;
+}
+
 .addbox {
     width: 40px;
     height: 40px;
@@ -117,6 +129,7 @@ main {
     margin-left: 17px;
     text-align: center;
 }
+
 
 .addbox i {
     font-size: 25px;
@@ -147,6 +160,9 @@ main {
     color: grey;
 }
 
+.play-ul a:hover{
+    color: white;
+}
 
 /* user */
 .user {
@@ -173,6 +189,10 @@ main {
 .download a {
     color: grey;
     font-size: 12px;
+}
+
+.download a:hover {
+    color: white;
 }
 
 .user-info {
