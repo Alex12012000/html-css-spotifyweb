@@ -548,6 +548,11 @@ footer {
         width: calc(100% / 2 - 0.75rem);
     }
     
+    /* FOOTER */
+
+    .song-icons {
+        padding-left: 10px;
+    }
 }
 
 /* sx */
@@ -635,6 +640,30 @@ footer {
     /* MAIN */
     .main {
         width: calc(100% - 40px);
+    }
+
+    /* FOOTER */
+    
+    /* Song Info */
+
+    .song-icons {
+        padding-left: 10px;
+    }
+    
+    /* Audio Settings */
+    .settings {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .settings i {
+        font-size: 10px;
+        margin: 10px 5px;
+    }
+
+    .settings .bar {
+        margin: 0 auto;
     }
 
 }
